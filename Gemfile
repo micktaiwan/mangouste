@@ -1,4 +1,10 @@
 # Edit this Gemfile to bundle your application's dependencies.
+
+# As described here:
+# http://www.mongodb.org/display/DOCS/Rails+3+-+Getting+Started#Rails3-GettingStarted-BundleandInitialize
+
+require 'rubygems'
+require 'mongo'
 source 'http://gemcutter.org'
 
 gem "rails", "3.0.0.beta"
