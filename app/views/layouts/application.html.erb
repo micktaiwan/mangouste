@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="<%= I18n.locale %>">
+    <head>
+        <title>[Mangouste] <%= controller.action_name %></title>
+        <%= stylesheet_link_tag 'main', :media => 'screen' %>
+        <%= stylesheet_link_tag 'scaffold', :media => 'screen' %>
+    </head>
+    <body>
+        <header>
+            <h1>The mangouste project</h1>
+        </header>
+        <nav></nav>
+        <div id="content">
+            <div id="flash_notice" style="color: green"><%= flash[:notice] %></div>
+            <section><%= yield :layout%></section>
+        </div>
+        <aside></aside>
+        <footer>
+            <address>Github:<a href="http://github.com/francisoud/mangouste">The mangouste project</a></address>
+        </footer>
+    </body>
+</html>
