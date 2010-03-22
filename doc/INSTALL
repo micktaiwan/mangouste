@@ -22,8 +22,8 @@ sudo gem install rack-mount -v=0.4
 sudo gem install rails --pre 
 
 == MongoDB  gems
-# sudo gem install mongo
-# sudo gem install mongo_ext
+sudo gem install mongo
+sudo gem install mongo_ext
 sudo gem install mongo_mapper
  
 == Start
