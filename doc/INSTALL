@@ -24,6 +24,9 @@ sudo gem install rails --pre
 == MongoDB  gems
 sudo gem install mongo mongo_ext mongo_mapper
  
+== Server (optionnal)
+sudo gem install thin
+
 # needed ? 
 # mangouste$ bundle install
 
