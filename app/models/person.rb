@@ -9,7 +9,7 @@ class PhoneNumber
   
 end
 
-class Person
+class Person #  TODO: or better: employee ?
   include MongoMapper::Document
 
   key :first_name,  String, :required=>true, :allow_blank => false
@@ -32,7 +32,7 @@ end
 
 class Manager < Person
 
-  many :persons
+  many :persons # TODO: how to change the name of the relation ? has_many :team_members, :through=>:person
   
 end
 
