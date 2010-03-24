@@ -1,6 +1,7 @@
 Mangouste::Application.routes.draw do |map|
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  match 'welcome/:action' => 'welcome#action'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
