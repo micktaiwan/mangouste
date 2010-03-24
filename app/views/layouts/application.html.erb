@@ -3,16 +3,22 @@
     <head>
         <title>[Mangouste] <%= controller.action_name %></title>
         <%= stylesheet_link_tag 'main', :media => 'screen' %>
-        <%= stylesheet_link_tag 'scaffold', :media => 'screen' %>
+        <%= stylesheet_link_tag 'scaffold' %>
+        <%= javascript_include_tag :defaults %>
+        <%= csrf_meta_tag %>
     </head>
     <body>
         <header>
             <h1>The mangouste project</h1>
         </header>
-        <nav></nav>
+        <nav>
+          <ul>Menu:
+            <li><%= link_to 'cvs', :controller => 'cvs' %></li>
+          </ul>
+        </nav>
         <div id="content">
-            <div id="flash_notice" style="color: green"><%= flash[:notice] %></div>
-            <section><%= yield :layout%></section>
+            <p class="notice"><%= notice %></p>
+            <section><%= yield %></section>
         </div>
         <aside></aside>
         <footer>
