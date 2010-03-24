@@ -1,14 +1,5 @@
 # http://railstips.org/blog/archives/2009/06/27/mongomapper-the-rad-mongo-wrapper/
 
-class PhoneNumber
-  include MongoMapper::EmbeddedDocument
-  
-  key :type,  Integer,  :numeric=>true #  0: no type, 1: personal, 2: work
-  key :phone, String,   :required=>true
-  #timestamps! # does not work ?
-  
-end
-
 class Person #  TODO: or better: employee ?
   include MongoMapper::Document
 
@@ -30,9 +21,5 @@ class Person #  TODO: or better: employee ?
   
 end
 
-class Manager < Person
 
-  many :persons # TODO: how to change the name of the relation ? has_many :team_members, :through=>:person
-  
-end
 
