@@ -4,4 +4,6 @@ class CvSection
 
   key :title, String
   key :position, Integer, :numeric=>true, :required=>true
+
+  many :cv_items
 end
