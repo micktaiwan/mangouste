@@ -6,6 +6,7 @@ class Person #  TODO: or better: employee ?
   key :first_name,  String, :required=>true, :allow_blank => false
   key :last_name,   String, :required=>true, :allow_blank => false
   key :birthdate,   Date
+  key :driver_license,  String
   #timestamps! # does not work ?
   
   many :phone_numbers
