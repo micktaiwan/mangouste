@@ -5,6 +5,6 @@ class Cv
   key :title, String
   key :subtitle, String
 
-  many :cv_sections
+  # many :cv_sections
   one :person
 end
