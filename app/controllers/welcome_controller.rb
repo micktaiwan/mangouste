@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
 
   def delete_person
-      Person.all.first.destroy
-      redirect_to :action => "index"
+    Person.all.first.destroy
+    redirect_to :action => "index"
   end
 
   def create_person
@@ -35,3 +35,4 @@ class WelcomeController < ApplicationController
     @users = User.all
   end
 end
+

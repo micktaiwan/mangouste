@@ -1,6 +1,6 @@
 # a cv_item is an item in a cv_section (they share some common attributes title, position) 
 class CvItem < CvSection
-  include MongoMapper::Document
+  include MongoMapper::Document  # FIXME: not necessary ?
 
   key :title, String
   key :description, String

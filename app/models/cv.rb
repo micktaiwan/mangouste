@@ -2,9 +2,10 @@
 class Cv
   include MongoMapper::Document
 
-  key :title, String
-  key :subtitle, String
+  key :title,     String
+  key :subtitle,  String
 
-  many :cv_sections
-  one :person
+  many  :cv_sections
+  one   :person
 end
+
