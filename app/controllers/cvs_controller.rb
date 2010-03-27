@@ -25,7 +25,6 @@ class CvsController < ApplicationController
   # GET /cvs/new.xml
   def new
     @cv = Cv.new
-    # @cv.person << Person.new(:driver_license => 'Permis B')
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,12 +35,17 @@ class CvsController < ApplicationController
   # GET /cvs/1/edit
   def edit
     @cv = Cv.find(params[:id])
+    @p = @cv.person
   end
 
   # POST /cvs
   # POST /cvs.xml
   def create
     @cv = Cv.new(params[:cv])
+
+    # FIXME remove this test
+    logger.debug 'adding test person'
+    @cv.person = Person.new(:first_name => 'foo', :last_name => 'bar', :driver_license => 'Permis B')
 
     respond_to do |format|
       if @cv.save

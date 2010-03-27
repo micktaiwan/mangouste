@@ -1,13 +1,11 @@
 <h1>Listing cvs</h1>
 
-<table>
+<table id="cvs">
   <tr>
-    <th>Title</th>
-    <th>Subtitle</th>
-    <th>Driver license</th>
-    <th>Postal address</th>
-    <th>Postal code</th>
-    <th>Town</th>
+    <th>Fisrt Name</th>
+    <th>Last Name</th>
+    <th>Cv Title</th>
+    <th>Cv Subtitle</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,12 +13,10 @@
 
 <% @cvs.each do |cv| %>
   <tr>
+    <td><%= cv.person.first_name %></td>
+    <td><%= cv.person.last_name %></td>
     <td><%= cv.title %></td>
     <td><%= cv.subtitle %></td>
-    <td><%= cv.driver_license %></td>
-    <td><%= cv.postal_address %></td>
-    <td><%= cv.postal_code %></td>
-    <td><%= cv.town %></td>
     <td><%= link_to 'Show', cv %></td>
     <td><%= link_to 'Edit', edit_cv_path(cv) %></td>
     <td><%= link_to 'Destroy', cv, :confirm => 'Are you sure?', :method => :delete %></td>

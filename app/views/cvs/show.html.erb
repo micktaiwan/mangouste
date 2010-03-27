@@ -1,4 +1,14 @@
 <p>
+  <b>First Name:</b>
+  <%= @cv.person.first_name %>
+</p>
+
+<p>
+  <b>Last Name:</b>
+  <%= @cv.person.last_name %>
+</p>
+
+<p>
   <b>Title:</b>
   <%= @cv.title %>
 </p>
@@ -7,27 +17,6 @@
   <b>Subtitle:</b>
   <%= @cv.subtitle %>
 </p>
-
-<p>
-  <b>Driver license:</b>
-  <%= @cv.driver_license %>
-</p>
-
-<p>
-  <b>Postal address:</b>
-  <%= @cv.postal_address %>
-</p>
-
-<p>
-  <b>Postal code:</b>
-  <%= @cv.postal_code %>
-</p>
-
-<p>
-  <b>Town:</b>
-  <%= @cv.town %>
-</p>
-
 
 <%= link_to 'Edit', edit_cv_path(@cv) %> |
 <%= link_to 'Back', cvs_path %>
