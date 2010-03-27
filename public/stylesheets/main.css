@@ -15,10 +15,11 @@ header, footer, section, aside, nav, article {
 
 body {
 	margin: 0 auto;
-	padding: 22px 0;
+	padding: 0;
 	width: 940px;
 	font: 13px/22px Helvetica, Arial, sans-serif;
 	background: #F0F0F0;
+	border: 1px #DDD solid;
 }
 
 h1, h2 {
@@ -37,17 +38,18 @@ p {
 	padding-bottom: 22px;
 }
 
-
+ul {
+  padding: 0 0 0 30px;
+}
 
 /*------------------------------
 =NAVIGATION
 ------------------------------*/
-/*
 nav {
 	position: absolute;
 	left: 0;
 	width: 100%;
-	background: url("images/nav_background.png");
+	background: #888;
 }
 
 	nav ul {
@@ -68,11 +70,11 @@ nav {
 				line-height: 44px;
 				text-align: center;
 				text-decoration: none;
-				color: #777;
+				color: #fff;
 			}
 			
 				nav ul li a:hover {
-					color: #fff;
+					color: #aaf;
 				}
 			
 			nav ul li.selected a {
@@ -85,8 +87,6 @@ nav {
 				text-align: left;
 				background: url("images/rss.png") left center no-repeat;
 			}
-*/
-
 
 /*------------------------------
 =INTRODUCTION
